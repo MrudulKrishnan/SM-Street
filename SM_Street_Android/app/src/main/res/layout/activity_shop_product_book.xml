@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0f7e1"
+    android:orientation="vertical"
+    tools:context=".book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:dividerPadding="10dp"
+        android:minHeight="200dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imgaprtmnt"
+            android:layout_width="60dp"
+            android:layout_height="115dp"
+            android:src="@drawable/ic_launcher_background" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:useDefaultMargins="true">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name" />
+
+                <TextView
+                    android:id="@+id/names"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="name" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price" />
+
+                <TextView
+                    android:id="@+id/prices"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="price" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock" />
+
+                <TextView
+                    android:id="@+id/stocks"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="stock" />
+
+
+            </GridLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="book now" />
+    </TableRow>
+</LinearLayout>

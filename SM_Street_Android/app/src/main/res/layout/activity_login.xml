@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/street2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <TableRow
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:textColor="#9ef0ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/username"
+            android:textColor="#D0F69B"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter your username"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:textColor="#9ef0ca"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:textColor="#D0F69B"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter your password"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/login_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9C8181"
+            android:text="Login" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/register_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9BB67C"
+            android:text="user register" />
+
+        <Button
+            android:id="@+id/B2_SellerRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller register" />
+    </TableRow>
+</LinearLayout>

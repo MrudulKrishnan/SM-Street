@@ -1,0 +1,53 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'admin/admin_home_index.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="{% url 'approve_sellers_search' %}#about">
+  <table width="572" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="7">Search sellers
+        <input type="text" name="seller_search" value="{{ seller }}"/>
+        <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td width="37">Name</td>
+      <td width="33">DOB</td>
+      <td width="45">Gender</td>
+      <td width="51">Address</td>
+      <td width="42">Phone  </td>
+      <td width="60">Email</td>
+{#      <td width="49">Latitude</td>#}
+{#      <td width="76">Longitude</td>#}
+      <td width="121">&nbsp;</td>
+    </tr>
+      {% for i in seller_obj %}
+    <tr>
+      <td>&nbsp;{{ i.FirstName }} {{ i.LastName }}</td>
+      <td>&nbsp;{{ i.DOB }}</td>
+      <td>&nbsp;{{ i.Gender }}</td>
+      <td>&nbsp;{{ i.Place }}, {{ i.Post }}, {{ i.Pin }}</td>
+      <td>&nbsp;{{ i.Phone }}</td>
+      <td>&nbsp;{{ i.Email }}</td>
+{#      <td>&nbsp;{{ i.Latitude }}</td>#}
+{#      <td>&nbsp;{{ i.Longitude }}</td>#}
+        {% if i.LOGIN.Type == "pending" %}
+          <td><p><a href="{% url 'accept_seller' seller_id=i.id %}">Accept</a></p>
+          <p><a href="{% url 'reject_seller' seller_id=i.id %}">Reject</a></p></td>
+        {% elif i.LOGIN.Type == "seller" %}
+            <td><p>Accepted</p></td>
+        {% elif i.LOGIN.Type == "rejected" %}
+            <td><p>Rejected</p></td>
+        {% endif %}
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#b0f7e1"
+
+    tools:context=".review_rating">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="#7B7E7D"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:textColor="#95f5c8"
+            android:layout_height="wrap_content"
+            android:text="Rating" />
+
+        <RatingBar
+
+            android:id="@+id/ET1_Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review" />
+
+        <EditText
+            android:id="@+id/ET2_Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/B1_SendRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </TableRow>
+</LinearLayout>

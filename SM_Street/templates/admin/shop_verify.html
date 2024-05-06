@@ -1,0 +1,45 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'admin/admin_home_index.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="{% url 'shop_verify_search' %}#about">
+  <table width="361" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="5">Shop name 
+      <input type="text" name="shop_name" value="{{ shop_name }}"/>
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td width="91">Shop name </td>
+      <td width="60">Address</td>
+      <td width="39">Phone</td>
+      <td width="68">Email</td>
+      <td width="69">&nbsp;</td>
+    </tr>
+      {% for i in shop_obj %}
+    <tr>
+      <td>&nbsp;{{ i.ShopName }}</td>
+      <td>&nbsp;{{ i.Place }}, {{ i.Post }}, {{ i.Pin }}</td>
+      <td>&nbsp;{{ i.Phone }}</td>
+      <td>&nbsp;{{ i.Email }}</td>
+        {% if i.LOGIN.Type == "pending" %}
+          <td><p><a href="{% url 'shop_accept' shop_id=i.id%}">Accept</a></p>
+          <p><a href="{% url 'shop_reject' shop_id=i.id %}">Reject</a></p></td>
+        {% elif i.LOGIN.Type == "shop" %}
+          <td><p>Accepted</p></td>
+        {% elif i.LOGIN.Type == "reject" %}
+          <td><p>Rejected</p></td>
+        {% endif %}
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

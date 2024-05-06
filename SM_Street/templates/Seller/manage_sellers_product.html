@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="{% url 'search_sellers_product' %}">
+  <table width="546" border="1">
+    <tr>
+      <td colspan="6">Serach product 
+      <input type="text" name="Product" value="{{ product }}"/>
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td>Product</td>
+      <td>Details</td>
+      <td>Category</td>
+      <td>Price</td>
+      <td>Image</td>
+      <td>&nbsp;</td>
+    </tr>
+      {% for i in product_obj %}
+    <tr>
+      <td>&nbsp;{{ i.ProductName }}</td>
+      <td>&nbsp;{{ i.ProductDetails }}</td>
+      <td>&nbsp;{{ i.CATEGORY.CategoryName }}</td>
+      <td>&nbsp;{{ i.Price }}</td>
+      <td>&nbsp;<img src="{{ i.Image.url }}" alt="error" style="width: 120px; height: 90px"/></td>
+      <td><p><a href="{% url 'update_seller_product' product_id=i.id %}">Update</a></p>
+      <p><a href="{% url 'delete_seller_product' product_id=i.id %}">Delete</a></p></td>
+    </tr>
+      {% endfor %}
+    <tr>
+      <td colspan="6"><div align="center"><a href="{% url 'add_sellers_product' %}">Add new product</a></div></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

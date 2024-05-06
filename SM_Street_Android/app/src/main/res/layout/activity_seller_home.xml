@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/street5"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".seller_home">
+
+    <Button
+        android:id="@+id/B1_ManageSellerProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Product" />
+
+    <Button
+        android:id="@+id/B2_UpdateStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update status" />
+
+    <Button
+        android:id="@+id/B3_Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+</LinearLayout>

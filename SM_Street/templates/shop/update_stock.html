@@ -1,0 +1,49 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'shop/shop_home_index.html'%}
+{% block body %}
+<form id="form1" name="form1" method="post" action="{% url 'product_stock_search' %}#about">
+  <table width="450" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="8">Product Search 
+      <input type="text" name="Product_search" value="{{ search }}" />
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td width="12">Product</td>
+      <td width="19">Category</td>
+      <td width="19">Details</td>
+      <td width="19">Price</td>
+      <td width="19">Image</td>
+      <td width="19">Date</td>
+      <td width="19">Stock</td>
+      <td width="272">&nbsp;</td>
+    </tr>
+      {% for i in stock_obj %}
+    <tr>
+      <td>&nbsp;{{ i.PRODUCT.ProductName }}</td>
+      <td>&nbsp;{{ i.PRODUCT.CATEGORY.CategoryName }}</td>
+      <td>&nbsp;{{ i.PRODUCT.ProductDetails }}</td>
+      <td>&nbsp;{{ i.PRODUCT.Price }}</td>
+      <td>&nbsp;<img src="{{ i.PRODUCT.Image.url }}" alt="error" style="width: 120px; height: 90px"/></td>
+      <td>&nbsp;{{ i.Date }}</td>
+      <td>&nbsp;{{ i.StockNo }}</td>
+      <td><div align="center"><a href="{% url 'update_shop_product_stock' stock_id=i.id %}#about">Update</a></div></td>
+    </tr>
+      {% endfor %}
+  <tr>
+      <td align="center" colspan="8">
+          <a href="{% url 'add_shop_product_stock' %}#about">Add stock</a>
+      </td>
+  </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

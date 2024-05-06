@@ -1,0 +1,63 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'shop/shop_home_index.html'%}
+{% block body %}
+<html>
+
+<body>
+  <form id="form1" name="form1" method="post" action="">
+    <table width="775" border="4" class="table table-dark table-hover">
+{#    <tr>#}
+{#        <td></td>#}
+{#    </tr>#}
+
+
+{#    <tr>#}
+{#      <th height="27" colspan="4" scope="row">Property name#}
+{#        <label>#}
+{#        <input type="text" name="textfield" required>#}
+{#        <input type="submit" name="Submit" value="Search">#}
+{#      </label></th>#}
+{#      </tr>#}
+    <tr >
+    <th width="147" height="27" scope="row">Product name</th>
+
+    <th width="147" height="27" scope="row">Price </th>
+        <th width="147" height="27" scope="row">Stock</th>
+    <th width="147" height="27" scope="row">Details</th>
+
+
+    <td width="67">&nbsp;</td>
+  </tr>
+      {% for i in val %}
+      <tr>
+
+        <td>{{i.PRODUCT.ProductName}} <img src="../media/{{ i.PRODUCT.Image }}" width="100dp" height="100dp" ></td>
+        <td>{{i.PRODUCT.Price}}</td>
+        <td>{{i.StockNo}}</td>
+        <td>{{i.PRODUCT.ProductDetails}}</td>
+        <td>
+            <a href="add_order/{{ i.id }}#about">Order</a>
+{#          <a href="delete_product/{{ i.id }}">Delete</a>#}
+        </td>
+      </tr>
+      {% endfor %}
+
+{#    <tr >#}
+{#                <td>Total : </td>#}
+{##}
+{#        <td colspan="4">#}
+{#       <a href="#about" class="btn btn-success">Add new</a>#}
+{#    </td>#}
+{#        <td>#}
+{#      <input type="submit" name="button" id="button" value="Finish" class="btn btn-success"/>#}
+{#        </td>#}
+{##}
+{#  </tr>#}
+</table>
+  </form>
+{% endblock %}

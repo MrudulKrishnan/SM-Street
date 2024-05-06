@@ -1,0 +1,44 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'shop/shop_home_index.html'%}
+{% block body %}
+<form id="form1" name="form1" method="post" action="{% url 'manage_special_offers_search' %}#about">
+  <table width="401" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="5">Serach Product 
+      <input type="text" name="search" value="{{ search }}"/>
+      <input type="submit" name="Submit" value="Submit" /></td>
+    </tr>
+    <tr>
+      <td width="48">Product</td>
+      <td width="83">Start Date </td>
+      <td width="91">End Date </td>
+      <td width="64">Details</td>
+      <td width="81">&nbsp;</td>
+    </tr>
+      {% for i in offers %}
+    <tr>
+      <td>&nbsp;{{ i.PRODUCT.ProductName }}</td>
+      <td>&nbsp;{{ i.StartDate }}</td>
+      <td>&nbsp;{{ i.EndDate }}</td>
+      <td>&nbsp;{{ i.Details }}</td>
+      <td><p align="center"><a href="{% url 'update_special_offers' offer_id=i.id %}#about">Update</a></p>
+      <p align="center"><a href="{% url 'delete_special_offers' offer_id=i.id %}">Delete</a></p></td>
+    </tr>
+      {% endfor %}
+    <tr>
+      <td colspan="5">
+          <div align="center"><a href="{% url 'add_special_offers' %}#about">Add special offer</a></div></td>
+      </td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

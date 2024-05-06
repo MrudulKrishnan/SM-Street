@@ -1,0 +1,59 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'Rental/rental_home_index.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="{% url 'view_booking_search' %}">
+  <table width="540" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="11">Search Date
+      <input type="date" name="Search_Date" value="{{ search }}"/>
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td>Username</td>
+      <td>Address</td>
+      <td>Phone</td>
+      <td>Product</td>
+      <td>Price</td>
+      <td>Image</td>
+      <td>Quandity</td>
+      <td>Requested date</td>
+      <td>From date </td>
+      <td>To date </td>
+      <td>Status</td>
+    </tr>
+      {% for i in booking_obj %}
+    <tr>
+      <td>&nbsp;{{ i.USER.FirstName }} {{ i.USER.LastName }}</td>
+      <td>&nbsp;{{ i.USER.Place }}, {{ i.USER.Post }}, {{ i.USER.Pin }}</td>
+      <td>&nbsp;{{ i.USER.Phone }}</td>
+      <td>&nbsp;{{ i.PRODUCT.ProductName }}</td>
+      <td>&nbsp;{{ i.PRODUCT.Price }}</td>
+      <td>&nbsp;<img src="{{ i.PRODUCT.Image.url }}" alt="error" style="height: 100px; width: 120px"/></td>
+      <td>&nbsp;{{ i.Quantity }}</td>
+      <td>&nbsp;{{ i.Date }}</td>
+      <td>&nbsp;{{ i.FromDate }}</td>
+      <td>&nbsp;{{ i.ToDate }}</td>
+      <td>&nbsp;
+          {% if i.Status == "pending" %}
+              <a href="{% url 'accept_rental_request' booking_id=i.id %}">Accept</a>
+              <a href="{% url 'reject_rental_request' booking_id=i.id %}">Reject</a>
+          {% elif i.Status == "accepted" %}
+            <p>Accepted</p>
+          {% elif i.Status == "rejected" %}
+             <p>Rejected</p>
+          {% endif %}
+      </td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

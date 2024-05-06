@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sm_street_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/shop_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/shop_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SM_Street_Android"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".edit_product"
+            android:exported="false" />
+        <service
+            android:name=".LocationService"
+            />
+        <activity
+            android:name=".add_product"
+            android:exported="false" />
+        <activity
+            android:name=".custom_manage_product"
+            android:exported="false" />
+        <activity
+            android:name=".update_status"
+            android:exported="false" />
+        <activity
+            android:name=".update_seller_product"
+            android:exported="false" />
+        <activity
+            android:name=".add_seller_product"
+            android:exported="false" />
+        <activity
+            android:name=".manage_product"
+            android:exported="false" />
+        <activity
+            android:name=".seller_home"
+            android:exported="false" />
+        <activity
+            android:name=".seller_registration"
+            android:exported="false" />
+        <activity
+            android:name=".shop_product_book"
+            android:exported="false" />
+        <activity
+            android:name=".book"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_rental"
+            android:exported="false" />
+        <activity
+            android:name=".view_rental"
+            android:exported="false" />
+        <activity
+            android:name=".custom_complaint_reply"
+            android:exported="false" />
+        <activity
+            android:name=".add_quantity"
+            android:exported="false" />
+        <activity
+            android:name=".select_product_type"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_rental_book"
+            android:exported="false" />
+        <activity
+            android:name=".custom_notifications"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_offers"
+            android:exported="false" />
+        <activity
+            android:name=".custom_search_product"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_shops"
+            android:exported="false" />
+        <activity
+            android:name=".user_registration"
+            android:exported="false" />
+        <activity
+            android:name=".book_product"
+            android:exported="false" />
+        <activity
+            android:name=".rental_booking"
+            android:exported="false" />
+        <activity
+            android:name=".view_rental_book"
+            android:exported="false" />
+        <activity
+            android:name=".sent_complaint_reply"
+            android:exported="false" />
+        <activity
+            android:name=".sent_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".review_rating"
+            android:exported="false" />
+        <activity
+            android:name=".notifications"
+            android:exported="false" />
+        <activity
+            android:name=".view_special_offers"
+            android:exported="false" />
+        <activity
+            android:name=".view_offers"
+            android:exported="false" />
+        <activity
+            android:name=".view_shop"
+            android:exported="false" />
+        <activity
+            android:name=".search_product"
+            android:exported="false" />
+        <activity
+            android:name=".user_home"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

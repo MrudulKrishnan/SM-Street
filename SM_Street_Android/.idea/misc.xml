@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.167" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_add_product.xml" value="0.25" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_add_quantity.xml" value="0.21" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_add_seller_product.xml" value="0.1" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_book.xml" value="0.21" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_book_product.xml" value="0.22083333333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_coustom_notifications.xml" value="0.22" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_coustom_view_offers.xml" value="0.25" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_coustom_view_rental_book.xml" value="0.33" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_complaint_reply.xml" value="0.25" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_manage_product.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_notifications.xml" value="0.12552083333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_search_product.xml" value="0.33" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_view_offers.xml" value="0.21" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_view_rental.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_view_rental_book.xml" value="0.21" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_custom_view_shops.xml" value="0.25" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_edit_product.xml" value="0.14895833333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_home.xml" value="0.151268115942029" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_main.xml" value="0.151268115942029" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_manage_product.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_notifications.xml" value="0.14114583333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_rental_booking.xml" value="0.22083333333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_review_rating.xml" value="0.25" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_search_product.xml" value="0.21" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_select_product_type.xml" value="0.17889492753623187" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_seller_home.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_seller_registration.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_sent_complaint.xml" value="0.14114583333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_sent_complaint_reply.xml" value="0.1" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_shop_product_book.xml" value="0.25" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_update_seller_product.xml" value="0.16259057971014493" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_update_status.xml" value="0.22" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_user_home.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_user_registration.xml" value="0.18" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_view_offers.xml" value="0.14114583333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_view_rental.xml" value="0.17481884057971014" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_view_rental_book.xml" value="0.14114583333333333" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_view_shop.xml" value="0.1" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/SM-Street/SM_Street_Android/app/src/main/res/layout/activity_view_special_offers.xml" value="0.14114583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

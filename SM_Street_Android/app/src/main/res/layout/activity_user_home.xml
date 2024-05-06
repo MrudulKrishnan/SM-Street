@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/street5"
+    android:orientation="vertical"
+    tools:context=".user_home">
+
+    <Button
+        android:id="@+id/B1_ViewShops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view shops " />
+
+    <Button
+        android:id="@+id/B3_ViewOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view offers" />
+
+    <Button
+        android:id="@+id/B4_Recommandation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recommendation" />
+
+    <Button
+        android:id="@+id/B5_Notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications" />
+
+    <Button
+        android:id="@+id/B7_SendComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send complaint" />
+
+    <Button
+        android:id="@+id/B8_SpecialOffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="special offer" />
+
+    <Button
+        android:id="@+id/B9_ViewRentalBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIew rental and book" />
+
+    <Button
+        android:id="@+id/B10_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout" />
+</LinearLayout>

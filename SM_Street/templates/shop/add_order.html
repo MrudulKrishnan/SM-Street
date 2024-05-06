@@ -1,0 +1,43 @@
+{% extends 'shop/shop_home_index.html'%}
+{% block body %}
+  <form id="form1" name="form1" method="post" action="/add_order1" enctype="multipart/form-data">
+    <table width="500" border="4" class="table table-dark table-hover">
+
+  <tr align="center">
+    <th ><img src="{{val.PRODUCT.Image.url}}" width="100dp" height="100dp"></th>
+    <td>
+  </tr>
+<tr>
+    <th scope="row"> Product</th>
+    <td>{{val.PRODUCT.ProductName}}</td>
+  </tr>
+<tr>
+    <th scope="row"> Price</th>
+    <td>{{val.PRODUCT.Price}}</td>
+  </tr>
+
+<tr>
+    <th scope="row"> Stock</th>
+    <td>{{val.StockNo}}</td>
+  </tr>
+
+<tr>
+    <th scope="row"> details</th>
+    <td>{{val.PRODUCT.ProductDetails}}</td>
+  </tr>
+
+<tr>
+    <th scope="row"> Enter quantity</th>
+    <td>
+      <input type="text" name="textfield" id="textfield" required  /></td>
+  </tr>
+
+  <tr>
+    <th colspan="2" scope="row">
+      <input type="submit" name="button" id="button" value="Bill" class="btn btn-success"/>  </th>
+  </tr>
+</table>
+</form>
+
+
+{% endblock %}

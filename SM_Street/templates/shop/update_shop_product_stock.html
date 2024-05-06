@@ -1,0 +1,26 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'shop/shop_home_index.html'%}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/update_shop_stock_action">
+  <table width="200" border="1" class="table table-dark table-hover">
+    <tr>
+      <td>Stock</td>
+      <td><input type="text" name="Stock" value="{{ stock_obj.StockNo }}" required pattern="[0-9]{1,10}"/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">
+        <input type="submit" name="Submit" value="Update" />
+      </div></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

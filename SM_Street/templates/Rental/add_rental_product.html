@@ -1,0 +1,51 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'Rental/rental_home_index.html' %}
+{% block body %}
+<form action="{% url 'add_rental_product_action' %}#about" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="262" border="1" class="table table-dark table-hover">
+    <tr>
+      <td>Product name </td>
+      <td><input type="text" name="Product_name"  required pattern="[A-Z a-z.0-9]{3,25}"/></td>
+    </tr>
+    <tr>
+      <td>Stock No.</td>
+      <td><input type="text" name="stock" required pattern="[0-9]{1,10}"/></td>
+    </tr>
+    <tr>
+      <td>Details</td>
+      <td><input type="text" name="Details" required/></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><input type="text" name="Price" required pattern="[0-9 .]{1,4}"/></td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td><select name="selected_category">
+          {% for i in category_obj %}
+              <option value="{{ i.id }}">{{ i.CategoryName }}</option>
+          {% endfor %}
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td><input type="file" name="Image" required/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">
+        <input type="submit" name="Submit" value="Add new product" />
+      </div></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}
